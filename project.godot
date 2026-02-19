@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Game01"
+config/name="Knight_Night"
 run/main_scene="uid://b2p3nmkj1ux15"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://cik7kscpulyf3"
 [autoload]
 
 Music="*uid://qfgwiluqfl0p"
+CheatListener="*uid://cnvxj72428agr"
 
 [input]
 
@@ -47,6 +48,12 @@ attack={
 "deadzone": 0.2,
 "events": []
 }
+
+[layer_names]
+
+2d_physics/layer_1="Environment"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Interactions"
 
 [physics]
 
