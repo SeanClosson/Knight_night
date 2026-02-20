@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b2nn1e05cl5n8" path="res://scripts/game_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://t5ewjc4qiwmn" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://ei4ihsrd07e8" path="res://scenes/player_hud.tscn" id="2_vtaks"]
 [ext_resource type="Texture2D" uid="uid://bwrpvxhdfcx2d" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://cdp7p3tt3a5g8" path="res://scenes/killzone.tscn" id="3_iywne"]
 [ext_resource type="PackedScene" uid="uid://cyd1rl6b8yjj8" path="res://scenes/platform.tscn" id="3_lnu2h"]
@@ -273,6 +274,8 @@ position = Vector2(32, -1)
 [node name="GameManager" type="Node" parent="." unique_id=858763398]
 unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
+
+[node name="PlayerHUD" parent="GameManager" unique_id=1740969763 instance=ExtResource("2_vtaks")]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1544776665]
 tile_set = SubResource("TileSet_lnu2h")
