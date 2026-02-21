@@ -276,6 +276,7 @@ unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
 [node name="PlayerHUD" parent="GameManager" unique_id=1740969763 instance=ExtResource("2_vtaks")]
+visible = false
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1544776665]
 tile_set = SubResource("TileSet_lnu2h")
@@ -331,6 +332,12 @@ position = Vector2(135, -163)
 
 [node name="Coin11" parent="Coins" unique_id=326484794 instance=ExtResource("4_lbhrr")]
 position = Vector2(440, -56)
+
+[node name="Coin21" parent="Coins" unique_id=755703518 instance=ExtResource("4_lbhrr")]
+position = Vector2(776, -170)
+
+[node name="Coin22" parent="Coins" unique_id=1345914588 instance=ExtResource("4_lbhrr")]
+position = Vector2(792, -170)
 
 [node name="Coin12" parent="Coins" unique_id=1637512982 instance=ExtResource("4_lbhrr")]
 position = Vector2(456, -40)

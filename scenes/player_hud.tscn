@@ -2,6 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://cl2s6d28o75dl" path="res://assets/fonts/PixelOperator8.ttf" id="1_iraov"]
 [ext_resource type="FontFile" uid="uid://b5xs3hq87rrsu" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_er5qu"]
+[ext_resource type="Texture2D" uid="uid://glmwodab7v1a" path="res://assets/HUD-Test01.png" id="3_er5qu"]
 
 [sub_resource type="Image" id="Image_iraov"]
 data = {
@@ -160,22 +161,27 @@ cache/0/25/0/glyphs/69/texture_idx = 0
 [sub_resource type="LabelSettings" id="LabelSettings_or0tx"]
 font = SubResource("FontFile_qcjqi")
 font_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.08627451, 0.08627451, 0.08627451, 0.19607843)
 
 [sub_resource type="LabelSettings" id="LabelSettings_qcjqi"]
 font = ExtResource("1_iraov")
 font_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.08627451, 0.08627451, 0.08627451, 0.19607843)
 
 [sub_resource type="LabelSettings" id="LabelSettings_s25gh"]
 font = ExtResource("2_er5qu")
 font_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.08627451, 0.08627451, 0.08627451, 0.19607843)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ujnyd"]
 font = ExtResource("2_er5qu")
 font_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.08627451, 0.08627451, 0.08627451, 0.19607843)
 
 [node name="PlayerHUD" type="CanvasLayer" unique_id=1740969763]
 
 [node name="Control" type="Control" parent="." unique_id=354181747]
+z_index = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -206,18 +212,26 @@ label_settings = SubResource("LabelSettings_qcjqi")
 
 [node name="LevelValue" type="Label" parent="Control" unique_id=791930482]
 layout_mode = 0
-offset_left = 88.0
+offset_left = 176.0
 offset_top = 8.0
-offset_right = 128.0
+offset_right = 216.0
 offset_bottom = 31.0
 label_settings = SubResource("LabelSettings_s25gh")
 horizontal_alignment = 2
 
 [node name="ScoreValue" type="Label" parent="Control" unique_id=1728427825]
 layout_mode = 0
-offset_left = 88.0
+offset_left = 176.0
 offset_top = 32.0
-offset_right = 128.0
+offset_right = 216.0
 offset_bottom = 55.0
 label_settings = SubResource("LabelSettings_ujnyd")
 horizontal_alignment = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1709057510]
+layer = 2
+follow_viewport_enabled = true
+
+[node name="HudTest01" type="Sprite2D" parent="." unique_id=507362348]
+position = Vector2(576, 328)
+texture = ExtResource("3_er5qu")
